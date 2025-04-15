@@ -1,0 +1,39 @@
+FONCTIONS_UTILISEES
+VARIABLES
+  premierNombreAlea EST_DU_TYPE NOMBRE
+  deuxiemeNombreAlea EST_DU_TYPE NOMBRE
+  i EST_DU_TYPE NOMBRE
+  tempsReponse EST_DU_TYPE NOMBRE
+  reponse EST_DU_TYPE NOMBRE
+  bonneReponse EST_DU_TYPE NOMBRE
+DEBUT_ALGORITHME
+  premierNombreAlea PREND_LA_VALEUR ALGOBOX_ALEA_ENT(1, 10)
+  deuxiemeNombreAlea PREND_LA_VALEUR ALGOBOX_ALEA_ENT(1, 10)
+  AFFICHER* "Calculer la somme des deux nombres suivants. Vous avez 10 secondes pour répondre."
+  AFFICHER* premierNombreAlea
+  AFFICHER* deuxiemeNombreAlea
+  POUR i ALLANT_DE 1 A 10000000
+    DEBUT_POUR
+    tempsReponse PREND_LA_VALEUR tempsReponse + 1
+    FIN_POUR
+  LIRE reponse
+  bonneReponse PREND_LA_VALEUR premierNombreAlea + deuxiemeNombreAlea
+  
+  SI (tempsReponse > 9000000) ALORS
+    DEBUT_SI
+    AFFICHER* "Temps écoulé ! La bonne réponse était : "
+    AFFICHER* bonneReponse
+    FIN_SI
+    SINON
+      DEBUT_SINON
+      SI (reponse == bonneReponse) ALORS
+        DEBUT_SI
+        AFFICHER* "Bravo, bonne réponse"
+        FIN_SI
+        SINON
+          DEBUT_SINON
+          AFFICHER* "Mauvaise réponse. La bonne était : "
+          AFFICHER* bonneReponse
+          FIN_SINON
+      FIN_SINON
+FIN_ALGORITHME
