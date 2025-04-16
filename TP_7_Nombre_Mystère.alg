@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Algo>
-    <description texte="" courant="nombreAleatoire PREND_LA_VALEUR ALGOBOX_ALEA_ENT(1, 100)"/>
+    <description courant="AFFICHER &quot;Bravo ! Vous avez trouvé le nombre mystère !&quot;" texte=""/>
     <extension extnom="inactif"/>
-    <fonction fctcode="" fctetat="inactif"/>
-    <F2 F2para="" F2etat="inactif" F2defaut="" F2lignes=""/>
+    <fonction fctetat="inactif" fctcode=""/>
+    <F2 F2lignes="" F2para="" F2etat="inactif" F2defaut=""/>
     <repere repcode="-10#10#-10#10#2#2" repetat="inactif"/>
-    <param maxBoucle="500000" epaisseurPoint="2" epaisseurLigne="2" arrondiAuto="vrai" nbDecimales="8" totalBoucles="5000000" totalAffichages="1000"/>
+    <param nbDecimales="8" totalAffichages="1000" totalBoucles="5000000" maxBoucle="500000" epaisseurLigne="2" epaisseurPoint="2" arrondiAuto="vrai"/>
     <item code="200#declarationfonctions" algoitem="FONCTIONS_UTILISEES"/>
     <item code="100#declarationsvariables" algoitem="VARIABLES">
         <item code="1#NOMBRE#nombreAleatoire" algoitem="nombreAleatoire EST_DU_TYPE NOMBRE"/>
